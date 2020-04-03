@@ -1,0 +1,44 @@
+h1 {
+  font: 2rem monospace;
+  color: #333;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.shortcut {
+  margin: 6px;
+  padding: 12px;
+  min-width: 72px;
+  background: #eee;
+  border-radius: 10px;
+  transition: transform .2s;
+}
+
+.key {
+  margin-bottom: 12px;
+  font: bold 2rem monospace;
+  color: #333;
+}
+
+.desc {
+  font: 1rem monospace;
+  color: #999;
+}
+
+.shortcut:hover {
+  background: #ddd;
+  transform: scale(1.2);
+}
+
+.shortcut:hover > .key {
+  color: green;
+}
