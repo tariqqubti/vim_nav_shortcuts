@@ -45,10 +45,10 @@ const Desc = d => Div('desc', d);
 const Shortcut = s => Col('shortcut', Key(s[0]) + Desc(s[1]));
 const Shortcuts = sArr => sArr.map(Shortcut).join('');
 
-const top = Col('top', Shortcuts(vertical.slice(0, 6)));
-const bottom = Col('bottom', Shortcuts(vertical.slice(6)));
-const left = Row('left', Shortcuts(horizontal.slice(0, 7)));
-const right = Row('right', Shortcuts(horizontal.slice(7)));
+const top = Col('top', Shortcuts(vertical.slice(0, 7)));
+const bottom = Col('bottom', Shortcuts(vertical.slice(7)));
+const left = Row('left', Shortcuts(horizontal.slice(0, 8)));
+const right = Row('right', Shortcuts(horizontal.slice(8)));
 
 const app = document.getElementById('app');
 app.innerHTML = Row('main', left + Col('top-bottom', top + bottom) + right);
